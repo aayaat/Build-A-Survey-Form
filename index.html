@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dust - Survey Form</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="site-wrapper">
+        <h1 class="title alignment" id="title">Survey Form</h1>
+        <p class="lead-txt alignment" id="description">
+            Let us know how we can improve Dust 
+        </p>
+        <form class="form" action="" id="survey-form">
+                <p class="small-txt">
+                    Required fields are followed by 
+                    <strong><abbr title="required">*</abbr></strong>.
+                </p>
+                <section class="form__section">
+                    <h2 class="visuallyhidden">Personal Information</h2>
+                    <div class="form__group">
+                        <label class="form__label" for="name" id="name-label">
+                            Name:
+                            <abbr title="Required">*</abbr>
+                        </label>
+                        <input class="form__data" type="text" id="name" placeholder="eg. Ayda Badjie" required>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="email" id="email-label">
+                            Email:
+                            <abbr title="Required">*</abbr>
+                        </label>
+                        <input class="form__data" type="email" id="email" placeholder="eg. ayda@gmail.com" required>
+                    </div>
+                    <div class="form__group">
+                        
+                        <label class="form__label" for="phone">
+                            Phone:
+                        </label>
+                        <input class="form__data" type="tel" id="phone" placeholder="eg. 220 111-2222">
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="number" id="number-label">
+                            Age:
+                            <abbr title="Required">*</abbr>
+                        </label>
+                        <input class="form__data" type="number" min="1" max="66" id="number" placeholder="eg. 14" required>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="current_role">
+                            Which option best describes your current role?
+                        </label>
+                        <select class="form__data" name="current_role" id="dropdown">
+                            <option selected value="">-- Select an option --</option>
+                            <option value="Student">Student</option>
+                            <option value="Full Time Work">Full Time Work</option>
+                            <option value="Full Time Learner">Full Time Learner</option>
+                        </select>
+                    </div>
+                    
+                </section>
+
+                <section class="form__section">
+                    <h2 class="visuallyhidden">Feedback Information</h2>
+                    <fieldset class="form__group">
+                        <legend class="form__label">
+                            How likely is that you would recommend Dust to a friend?
+                        </legend>
+                        <div class="form__data form__rc-group">
+                            <label for="definitely">
+                                <input type="radio" id="definitely" name="rating" value="Definitely">
+                                Definitely
+                            </label>
+                            <label for="maybe">
+                                <input type="radio" id="maybe" name="rating" value="Maybe">
+                                Maybe
+                            </label>
+                            <label for="not_sure">
+                                <input type="radio" id="not_sure" name="rating" value="Not sure">
+                                Not sure
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form__group">
+                        <label class="form__label" for="like">
+                            What do you like most in Dust: 
+                        </label>
+                        <select class="form__data" name="like" id="like">
+                            <option selected value="">-- Select an option --</option>
+                            <option value="Pair Programming">Pair Programming</option>
+                            <option value="Projects">Projects</option>
+                            <option value="Soft Skills">Soft Skills</option>
+                            <option value="Community">Community</option>
+                            <option value="Open Source">Open Source</option>
+                        </select>
+                    </div>
+
+                    <fieldset class="form__group">
+                        <legend class="form__label">
+                            Choose all the ways you think we can improved Dust
+                        </legend>
+                        <div class="form__data form__rc-group">
+                            <label for="front-end_projects">
+                                <input type="checkbox" id="front-end_projects" name="front-end_projects" value="Front-end Projects">
+                                Front-end Projects
+                            </label>
+                            <label for="back-end_projects">
+                                <input type="checkbox" id="back-end_projects" name="back-end_projects" value="Back-end Projects">
+                                Back-end Projects
+                            </label>
+                            <label for="soft_skills">
+                                <input type="checkbox" id="soft_skills" name="soft_skills" value="Soft Skills">
+                                Soft Skills
+                            </label>
+                            <label for="projects">
+                                <input type="checkbox" id="projects" name="projects" value="Projects">
+                                Projects
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form__group">
+                        <lable class="form__label" for="comments">
+                            Any Comments or Suggestions?
+                        </lable>
+                        <textarea class="form__data" name="comments" id="comments"></textarea>
+                    </div>         
+
+                </section>
+
+                <div class="form__btn-group">
+                    <input class="btn btn--primary" type="submit" value="Submit" id="submit">
+                    <input class="btn" type="reset" value="Reset">
+                </div>
+        </form>
+    </div>
+
+    <!-- script to test the tribute page from fcc -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
